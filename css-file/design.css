@@ -36,10 +36,20 @@ span {
 }
 
 .primary-btn {
+  outline: 0;
+  border: 0;
   color: #fff;
+  cursor: pointer;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 500;
   padding: 15px 36px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  background: #ff5400;
+}
+
+.primary-btn:hover {
+  background: #ff6d24;
 }
 
 /* ========== Navbar design start =========== */
@@ -163,6 +173,33 @@ nav a:hover {
   font-weight: 700;
 }
 
+/* ======== Our Popular Tours section design start ======== */
+.our-popular-section {
+  display: flex;
+  gap: 55px;
+  margin: 100px 0;
+  justify-content: space-between;
+}
+
+.left-side h2 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.left-side p {
+  margin: 24px 0;
+}
+
+.left-side ul li {
+  margin-bottom: 16px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 20px;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 580px) and (max-width: 992px) {
   .hide {
@@ -178,10 +215,15 @@ nav a:hover {
     padding: 40px 60px;
   }
 
-  .select-content {
+  .select-content,
+  .our-popular-section {
     gap: 22px;
     padding: 40px;
     flex-direction: column;
+  }
+
+  .right-side img {
+    width: 100%;
   }
 
   .select-card {
@@ -194,7 +236,8 @@ nav a:hover {
     display: none;
   }
   nav,
-  .banner-section {
+  .banner-section,
+  .our-popular-section {
     margin: 20px;
   }
 
@@ -229,12 +272,25 @@ nav a:hover {
   .banner-section p {
     font-size: 14px;
     margin-top: 8px;
-    margin-bottom: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 32px;
   }
 
-  .select-content {
-    gap: 14px;
+  .select-content,
+  .our-popular-section {
+    gap: 18px;
     flex-direction: column;
+  }
+
+  .left-side h2 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .right-side img {
+    /* height: 100%; */
+    width: 100%;
   }
 
   .select-card {
