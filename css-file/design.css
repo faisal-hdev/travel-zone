@@ -24,14 +24,14 @@ span {
 }
 
 .container {
-  max-width: 1170px;
   margin: 0 auto;
+  max-width: 1170px;
 }
 
 .section-title {
-  color: #131318;
   font-size: 40px;
   font-weight: 800;
+  color: #131318;
   margin-bottom: 24px;
 }
 
@@ -50,8 +50,8 @@ nav {
 }
 
 .logo {
-  display: flex;
   gap: 10px;
+  display: flex;
   align-items: center;
 }
 
@@ -60,9 +60,9 @@ nav {
 }
 
 .logo h3 {
-  color: #131318;
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 800;
+  color: #131318;
 }
 
 nav > ul {
@@ -71,8 +71,8 @@ nav > ul {
 }
 
 nav li {
-  list-style: none;
   margin: 18px;
+  list-style: none;
 }
 
 nav a {
@@ -87,7 +87,50 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.block {
+  display: none;
+}
+
 /* ======== Banner section design start ======== */
 .banner-section {
   background-image: url("../assets/Images/banner-image.png");
+}
+
+/* ========== Responsive media queries ========== */
+@media screen and (min-width: 580px) and (max-width: 992px) {
+  .hide {
+    display: none;
+  }
+
+  nav {
+    margin: 40px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .hide {
+    display: none;
+  }
+  nav {
+    margin: 20px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .block {
+    display: block;
+    font-size: 24px;
+  }
+
+  .logo h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #131318;
+  }
+
+  .logo img {
+    width: 36px;
+  }
 }
