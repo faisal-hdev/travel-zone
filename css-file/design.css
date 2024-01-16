@@ -135,42 +135,49 @@ nav a:hover {
   display: flex;
   padding: 16px;
   align-items: center;
+  gap: 8px;
   border-radius: 8px;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.3);
 }
 
-.select-card {
-  width: 174px;
-  padding: 14px;
+.in-box {
+  gap: 6px;
+  width: 170px;
+  display: flex;
+  padding: 16px 10px;
   border-radius: 8px;
+  align-items: center;
+  justify-content: center;
   background-color: #ffff;
 }
 
-.select-card p {
-  margin: 0;
-  color: rgba(19, 19, 24, 0.5);
+.input-field {
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #424247;
+  background: none;
 }
 
-.text-icon {
+.p-rlt {
+  margin-right: 44px;
+}
+
+.btn-find {
+  background: 0;
+  border: 0;
   display: flex;
+  gap: 8px;
   align-items: center;
-  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.search-box {
-  gap: 14px;
-  display: flex;
-  color: #fff;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-box p {
-  left: 10px;
-  color: #fff;
-  font-weight: 700;
+.input-field {
+  font-size: 14px;
 }
 
 /* ======== Our Popular Tours section design start ======== */
@@ -305,13 +312,13 @@ nav a:hover {
 }
 
 form,
-input {
+.in-t {
   width: 393px;
   display: block;
   margin-bottom: 16px;
 }
 
-input {
+.in-t {
   border: 0;
   outline: 0;
   font-size: 16px;
@@ -408,6 +415,15 @@ input {
     padding: 30px;
   }
 
+  .select-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .in-box {
+    width: 100%;
+  }
+
   .form-container,
   .img-content,
   .footer-description,
@@ -424,7 +440,6 @@ input {
     padding: 40px 60px;
   }
 
-  .select-content,
   .our-popular-section,
   .news-letter-section {
     gap: 22px;
@@ -442,15 +457,6 @@ input {
 
   .select-card {
     width: 500px;
-  }
-  .footer-description {
-    /* text-align: center; */
-  }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  .save-up {
-    left: 355px;
   }
 }
 
@@ -474,9 +480,22 @@ input {
     gap: 8px;
   }
 
+  .in-box {
+    width: 100%;
+  }
+
   .block {
     display: block;
     font-size: 24px;
+  }
+
+  .select-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .in-box {
+    padding: 16px 10px;
   }
 
   .logo h3 {
@@ -506,10 +525,6 @@ input {
     margin-bottom: 32px;
   }
 
-  /* .save-up {
-    left: 342px;
-  } */
-
   .our-popular-section {
     padding: 20px;
     margin: 0 0;
@@ -520,7 +535,6 @@ input {
     margin-top: 20px;
   }
 
-  .select-content,
   .our-popular-section,
   .box-container,
   .news-letter-section {
@@ -573,7 +587,7 @@ input {
   }
 
   form,
-  input {
+  .in-t {
     width: 100%;
   }
 
@@ -610,7 +624,6 @@ input {
     width: 255px;
   }
 
-  .select-content,
   .select-card p {
     margin: 0;
   }
