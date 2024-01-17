@@ -509,15 +509,24 @@ form,
 
   nav,
   .choose-us-section,
-  .choose-us-section {
+  .choose-us-section,
+  .testimonial-section {
     margin: 40px;
+  }
+  .testimonial-section h3 {
+    font-size: 36px;
+  }
+
+  .card-container {
+    align-items: center;
   }
 
   .footer-section {
     padding: 30px;
   }
 
-  .select-content {
+  .select-content,
+  .card-container {
     flex-direction: column;
     gap: 12px;
   }
@@ -572,13 +581,33 @@ form,
   .our-popular-section,
   .choose-us-section,
   .img-container,
-  .text-contents {
+  .text-contents,
+  .testimonial-section {
     margin: 20px;
+  }
+
+  .testimonial-section h3 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .testimonial-section p {
+    width: 100%;
+    margin-top: 10px;
   }
 
   .text-content p {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .text-contents h3 {
