@@ -108,6 +108,7 @@ nav a:hover {
   border-radius: 16px;
   padding: 106px 180px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       180deg,
@@ -208,7 +209,6 @@ nav a:hover {
 }
 
 /* ======== News letter section design start ======== */
-
 .text-contents {
   margin: 0 auto;
   text-align: center;
@@ -220,46 +220,68 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.img-container {
+/* ======== Choose Your Destination section design start ======== */
+
+.gallery-container {
+  gap: 1rem;
   display: grid;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
-.img-container img {
+.gallery-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
+  border-radius: 18px;
+}
+
+.item {
+  position: relative;
+  height: 300px;
+  text-align: center;
+}
+
+.text-above {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000002f;
+  transform: translate(-50%, -50%);
 }
 
 .grid-item-1 {
-  grid-column: 1 / span 6;
+  grid-column: auto/span 6;
 }
-
 .grid-item-2 {
-  grid-column: 7 / span 6;
+  grid-column: auto/span 6;
 }
-
 .grid-item-3 {
-  grid-column: 1 / span 4;
+  grid-column: auto/span 4;
 }
-
 .grid-item-4 {
-  grid-column: 5 / span 5;
+  grid-column: auto/span 5;
 }
-
 .grid-item-5 {
-  grid-column: 10 / span 3;
+  grid-column: auto/span 3;
 }
-
 .grid-item-6 {
-  grid-column: 1 / span 5;
+  grid-column: auto/span 5;
 }
-
 .grid-item-7 {
-  grid-column: 6 / span 7;
+  grid-column: auto/span 7;
 }
 
 /* ======== Why Choose Us section design start ======== */
@@ -723,8 +745,9 @@ form,
   }
 
   .form-container,
-  .footer-section {
-    padding: 24px;
+  .footer-section,
+  .gallery-container {
+    padding: 18px;
   }
 
   form,
@@ -774,50 +797,11 @@ form,
     margin: 0;
   }
 
-  .img-container {
+  .gallery-container {
     grid-template-columns: 1fr;
-    gap: 20px;
-    grid-template-rows: repeat(7, 1fr);
   }
 
-  .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .grid-item-1 {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-
-  .grid-item-2 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-
-  .grid-item-3 {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-  }
-
-  .grid-item-4 {
-    grid-column: 1 / span 1;
-    grid-row: 4 / span 1;
-  }
-
-  .grid-item-5 {
-    grid-column: 1 / span 1;
-    grid-row: 5 / span 1;
-  }
-
-  .grid-item-6 {
-    grid-column: 1 / span 1;
-    grid-row: 6 / span 1;
-  }
-
-  .grid-item-7 {
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 1;
+  .gallery-container .item {
+    grid-column: auto;
   }
 }
